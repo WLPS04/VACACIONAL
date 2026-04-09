@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<!-- Indica que estamos creando una pagina HTMLS -->
+ <html lang="es">   
+<!-- lang="es" significa que la pagina esta en español -->
+
+<head>
+<!-- Configuracion de caracteres para que acepte tildes y ñ -->
+<meta charset="UTF-8">
+
+<!--Hace que la pagina se vea bien en celular y computadora -->
+<meta name ="viewport" content="width=device-width, initial-scale=1.0">
+
+<!--Titulo que aparece en la petaña del navegador -->
+<title>Mi Primera Pagina Web</title>
+
+<style>
+
+body{
+
+ background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPhrGm453jNLzDPJ9UNc7qGbSrhso38mAl8w&s');
+
+}
+/* ===== DISEÑO DEL CUERPO DE LA PAGINA ===== */
+body{
+    font-family: Arial, sans-serif; /*Tipo de letra */
+    background: Linear-gradient(to right, 87#CEFA, #E0FFFF);/* Fondo con degradado */
+    margin: 0; /* Quita espacios exteriores */
+    padding: 0; /* Quita espacios interiores  */
+    text-align: center; /* Centra todo el texto */
+
+
+}
+
+/* ====== ENCABEZADO ====== */
+header{
+    background-color: #ff9800; /* Color naranja */
+    color: rgb(48, 128, 90); /* Texto verde */
+    padding: 20px; /* Espacio interno */
+
+
+}
+ 
+/* Titulo del encabezado */
+header h1{
+    margin: 0;
+
+
+}
+
+/* ===== CONTENIDO GENERAL ===== */
+.contenido{
+    padding: 20px;
+
+}
+
+/* ===== TARJETAS ===== */ 
+.tarjeta{
+    background-color: rgb(224, 163, 93); /* Fondo blanco */
+    margin: 20px auto; /* Espacio entre tarjetas */
+    padding: 20px; /* Espacio interno */
+    width: 70%; /* Ancho de la tarjeta */
+    border-radius: 10px; /* Bordes redondeados*/
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);  /* Sombra */
+    
+}
+
+.tarjeta2{
+    background-color: rgb(158, 166, 235); /* Fondo blanco */
+    margin: 20px auto; /* Espacio entre tarjetas */
+    padding: 20px; /* Espacio interno */
+    width: 70%; /* Ancho de la tarjeta */
+    border-radius: 10px; /* Bordes redondeados*/
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);  /* Sombra */
+    
+}
+
+.tarjeta3{
+    background-color: rgb(230, 155, 217); /* Fondo blanco */
+    margin: 20px auto; /* Espacio entre tarjetas */
+    padding: 20px; /* Espacio interno */
+    width: 70%; /* Ancho de la tarjeta */
+    border-radius: 10px; /* Bordes redondeados*/
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);  /* Sombra */
+    
+}
+
+.tarjeta4{
+    background-color: rgb(191, 248, 176); /* Fondo blanco */
+    margin: 20px auto; /* Espacio entre tarjetas */
+    padding: 20px; /* Espacio interno */
+    width: 70%; /* Ancho de la tarjeta */
+    border-radius: 10px; /* Bordes redondeados*/
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);  /* Sombra */
+    
+}
+
+/* ===== BOTON ===== */
+button{
+    background-color: #4c6faf; /* Color verde */
+    color:white; /* Texto blanco */
+    padding: 10px 20px; /* Tamaño del boton */
+    border: none; /* Sin borde*/
+    border-radius: 10px; /* Bordes redondeado */
+    cursor: pointer; /* Cambia el cursor al pasar */
+    font-size: 16px
+
+}
+
+/* Cambia el color cundo el mouspasa encima */
+button:hover{
+    background-color: #bbffbf;
+
+}
+
+/* ====== PIE DE PAGINA ====== */
+footer{
+    background-color: #333; /* Fondo oscuro */
+    color: white; /* Texto blanco */ 
+    padding: 10px;
+    margin-top: 20px;
+}
+</style>
+</head>
+
+<body>
+<!-- ===== ENCABEZADO ===== --> 
+ <header>
+<h1>★ Mi Primera Pagina Web ★</h1>
+<p>Aprendiendo programacion con HDML</p>
+</header>
+
+<!-- ===== CONTENIDO PRINCIPAL ===== --> 
+ <div class="contenido">
+
+<!-- ===== TARJETA 1 ===== -->
+<div class="tarjeta">
+<h2>hola mundo</h2>
+
+<!-- Texto -->
+ <p>Esta es mi primera pagina web creada por mi.</p>
+ <!-- Imagen -->
+  <section class="imagen-central">
+    <img src="https://img.freepik.com/foto-gratis/hombre-pulgar-arriba_1149-1712.jpg" alt="Trulli" width="200" height="200">
+  </section>
+
+ <!-- Imagen 
+<section class="imagen-central">-->
+ 
+</div>
+
+<!-- ===== TARJETA 2 ===== -->
+ 
+<!-- Texto -->
+
+<div class="tarjeta2">
+
+<h2>mis cosas favoritas keneth</h2>
+
+     <section class="imagen-central">
+    
+     </section>
+<!-- Lista -->
+ <ul>
+<li>ver momazos de calzoski</li>
+<li>dibujar</li>
+<li>jugar rocketsito y clashito</li>
+<li>escuchar musica de nirvana</li>
+ </ul>
+ </div>
+
+ <!-- ***** TARJETA 3 *****-->
+
+ <div class="tarjeta3">
+
+<h2>mis cosas favoritas jordy</h2>
+
+      <section class="imagen-central">
+    
+     </section>
+</h2>
+<!-- Lista -->
+ <ul>
+<li>jugar maincraf</li>
+<li>ver tistos</li>
+<li>salir en bici</li>
+<li>escuchar musica de canserbero</li>
+ </ul>
+ 
+</div>
+
+
+ <!-- Boton que ejecuta una funcion -->
+  <button onclick="saludo()">Haz click aqui plis porfa</button>
+  <!-- Aqui aparecera el mensaje -->
+   <p id="mensaje"></p>
+
+   </div>
+
+<!-- ***** TARJETA 4 ***** -->
+
+<div class="tarjeta">
+
+<h2>mis cosas favoritas diego</h2>
+
+<img src="https://media.tenor.com/6oVpxIFwAAoAAAAM/cat-kiss.gif" alt="Trulli" width="200" height="200">
+
+<section class="imagen-central">
+
+     </section>
+</h2>
+<!-- Lista -->
+ <ul>
+<li>hacer stunt</li>
+<li>jugar fuchibol</li>
+<li>jugar free y clashito</li>
+<li>escuchar musica bachata</li>
+ </ul>
+ </div>
+
+
+</div>
+
+<!-- ===== PIE DE PAGINA ===== -->
+ <footer>
+    <p>Hecho por jordy y kenet </p>
+ </footer>
+
+
+
+ <!-- ====== JAVASCRIPT ====== -->
+  <script>
+
+    <!-- Funcion que se ejecuta al presionar el boton -->
+    function saludo(){
+    
+    // Busca el elemento con id "mensaje"
+    document.getElementById("mensaje")
+        // Cambia el texto
+        .innerHTML="¡Hola!  bienvenido a mi primera pagina web";
+
+    }
+
+  </script>
+
+  </body>
+  </html>
+
+
+

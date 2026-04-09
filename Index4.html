@@ -1,0 +1,200 @@
+<!DOCTYPE HTML>
+<!--INDICA QUE ESTAMOS CREANDO UNA PAGINA HTML5-->
+<HTML LANG="ES">
+<!--´lang="es" significa de que la pagina esta en español-->
+ 
+<HEAD>
+
+
+
+<!-- configuracion de caracteres para que acepte tildes de ñ--> 
+<meta charset="UTF-8">
+<!-- hace la pagina se vea bien en el celular y computadora-->
+ <meta name="viewport" content=" width=device-width,initial-scale=1.0">
+ <!-- titulo que aparece en la pestaña del navegador-->
+ <title> Mi primera pagina web</title>
+
+ <style>
+
+/*=====DISEÑO DEL CUERPO DE LA PAGINA====*/
+ .body{
+       font-family:Arial,sans-serif;/*tipo de letra*/
+       background-image: url('https://www.shutterstock.com/image-illustration/light-gray-single-color-plain-260nw-1996007810.jpg');
+       margin: 0;/*quita espacios exteriores*/
+       padding: 0;/*quita espacios interiores*/
+      text-align: center;/*centra todo el texto*/ 
+ }
+
+ /*======ENCABEZADO=====*/
+ header{
+        background-color: #2674ac;/*color naranja*/
+        color: rgb(169, 231, 255); /*texto blanco*/
+        padding: 20px ;/*espacio interno*/
+ }
+
+ /*Titulo del encabezado */
+    header h1{
+
+     margin: 0;
+
+    }
+
+    /*===== CONTENIDO GENERAL ===== */
+    .contenido{  
+
+         padding: 20px;
+    }
+
+    
+    /*======TARJETAS======= */
+    .tarjeta{ 
+         background-color: rgb(122, 194, 227); /* Fondo blanco */
+         margin:  20px auto; /* Espacio entre tarjetas */
+         padding: 20px;/* Espacio interno */
+         width: 70%; /* Ancho de la tarjeta */
+         border-radius: 15px; /*Bordes redondeados */
+         box-shadow: 0px 0px 10px rgba(0,0,0,0,2) ; /*  Sombra  */
+    }
+
+/*======TARJETA 2======= */
+    .tarjeta{ 
+         background-color: rgb(122, 194, 227); /* Fondo blanco */
+         margin:  20px auto; /* Espacio entre tarjetas */
+         padding: 20px;/* Espacio interno */
+         width: 70%; /* Ancho de la tarjeta */
+         border-radius: 15px; /*Bordes redondeados */
+         box-shadow: 0px 0px 10px rgba(0,0,0,0,2) ; /*  Sombra  */
+    }
+
+
+
+
+
+
+
+    /* ====BOTON===== */
+     button{   
+            background-color: #187ad6; /* Color verde */
+            color: rgb(115, 194, 220); /* Texto blanco */
+            padding: 10px 20px; /* Tamaño del boton */
+            border: none; /* Bordes redondeados */
+            border-radius: 10px; /* Bordes redondeados */
+            cursor: pointer ; /* Cambia el cursor al pasar */
+            font-size: 16px;
+     }
+ /*cambia el color cuando el mause pasa por encima*/
+ button:hover{
+ background-color: #abb1ec;   
+
+}
+
+/*======PIE DE PAGINA======*/
+footer{
+       background-color:#8db2fa; /*fondo oscuro*/ 
+       color: rgb(255, 255, 255);/*texto blanco*/
+       padding: 10px;
+       margin-top: 20px;
+}
+</style>
+
+
+<body>
+  
+<!--=======ENCABEZADO======-->    
+<HEADER>
+<center><h1>★  Mi primera pagina web ★ </h1> </center> 
+ <center><p>aprendiendo programacion con html</p></center>
+ 
+ </HEADER>
+
+ <!--======CONTENIDO PRINCIPAL=====-->
+ <div class="contenido">
+ 
+    <!--=======TARJETA 1=======-->
+    <div class="tarjeta">
+   <center> <h1>✋HOLA MUNDO</h1></center>
+
+    <!---texto-->
+   <center><p>Esta es mi primera pagina web creada por mi.</p></center> 
+<!-- Imagen -->
+ <section class="imagen-central">
+
+<!-- imagen de niños -->
+<center><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIKbQU3-pWIqVpoh9BBmxz1K2laUc2bhJwrw&s" width="700" height="260"alt="Niños en escuela vacasional" 
+></center>
+
+
+
+
+</section>
+</div>
+
+<!-- ===== TARJETA 1 ===== -->
+ <div class="tarjeta">
+<h2> ⚽ las cosas favoritas de :Maykel</h2>   
+
+<!-- Lista -->
+ <ul>
+<li>Jugar futbol</li>
+<li>Aprender programacion.</il>
+<li>videojuegos</li>
+<li>entrenar</li>
+ </ul>
+
+</div>
+
+<!-- ===== TARJETA 2 ===== -->
+ <div class="tarjeta">
+<h2> 🙃Las cosas favoritas de: DYLAN</h2>   
+
+<!-- Lista -->
+ <ul>
+<li>dibujar</li>
+<li>Aprender programacion</il>
+<li>Escuchar musica</li>
+<li>nadar</li>
+<li>viajar</li>
+ </ul>
+
+</div>
+
+
+
+
+
+
+<!-- ===== TARJETA 3 ===== -->
+<div class="tarjeta">
+<h2> Presiona el boton</h2>
+
+<!-- Boton que ejecuta una funcion -->
+<button onclick="saludo()">Haz clic aqui</button>
+
+<!--Aqui aparecera el mensaje-->
+<p id="mensaje"></p>
+</div>
+
+
+</div>
+
+<!---======PIE DE PAGINA======-->
+<footer>
+ <p>hecho  por Dylan y Maykel </p>
+ <footer>
+
+ <!--=======JAVASCRIPT========--> 
+ <script>
+ <!---FUNCION QUE SE ejecuta AL APRETAR UN boton-->     
+ function saludo(){
+
+//busca el elemento con id"mensaje"
+document.getElementById("mensaje")
+//cambia el texto
+.innerHTML="!Hola! BIENVENID@  A NUESTRA PAGINA WEB"
+
+ } 
+
+ </script>
+ 
+
+</html>     
